@@ -19,16 +19,18 @@ Para rodar a aplicação localmente, siga os passos abaixo:
 
    ```bash
    docker-compose -f ./docker-compose-local.yml up -d
+   ```
 3. Certifique-se de que o arquivo `application.properties` esteja configurado com:
       ```bash
    spring.profiles.active=local
+   ```
 4. A aplicação pode ser executada diretamente através de sua IDE favorita, desde que o Java 17 esteja configurado corretamente.
 
 ### Full Docker
 Para uma configuração completa utilizando Docker, incluindo a aplicação e o banco de dados, execute o seguinte comando:
-
-`docker-compose -f ./docker-compose-local.yml up -d`
-
+```bash
+docker-compose -f ./docker-compose-local.yml up -d
+```
 
 ## Acesso à API
 Após a aplicação estar em execução, você pode acessar a documentação da API e testar os endpoints através do Swagger UI no seguinte endereço:
